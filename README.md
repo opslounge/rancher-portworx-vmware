@@ -1,18 +1,20 @@
-# rancher-portworx-vmwar
+# Building Rancher Porworx VMware templates 
 
-The scope of this repo is to provide guidelines on setting up your VMware templates to build Rancher RKE
+## The pe of this repo is to provide guidelines on setting up your VMware templates to build Rancher RKE
 Clusters you can install Portworx on top of for Data Management inside Rancher.
+
 
 prerequisites:
 At the time of this writing the following environment variables where used.
 
+'''
 VSphere 7.01 up3
 Rancher server 2.6
 Centos 7.6 virtual machine template
 Linux Kernel 3.10.0-1160.36.2.el7.x86_64
 Portworx 2.9
 cloud-init
-
+'''
 When building Virtual Machine templates we set the VM template to be the prerequisites as defined by portworx. 
 
 CPU 4vcpu
