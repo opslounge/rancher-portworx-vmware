@@ -1,10 +1,9 @@
 # Building Rancher Porworx VMware templates 
 
-## The pe of this repo is to provide guidelines on setting up your VMware templates to build Rancher RKE
-Clusters you can install Portworx on top of for Data Management inside Rancher.
+## The scope of this repo is to provide guidelines on setting up your VMware templates to build Rancher RKE Clusters you can install Portworx on top of for Data Management inside Rancher.
 
 
-prerequisites:
+### Prerequisites:
 At the time of this writing the following environment variables where used.
 ```
 VSphere 7.01 up3
@@ -23,8 +22,12 @@ Disk
         /opt = 3gb
 
 ### Storage 
-	depends on your cluster storage requirements 
-        for demo we just typically start with 20gb additional disk in vmware
+This depends on your cluster storage requirements. For demo we just typically start with 20gb additional disk in vmware. 
+
+there are many different options here.  Its best to start out with an additional virtual disk for general purpose storage using vmware best practice. 
+
+You can additionally provision storage direct from the flash array using the following docs. 
+Pure Array [Docs](https://docs.portworx.com/reference/pure-reference/) 
 
 ### Networking 
 
